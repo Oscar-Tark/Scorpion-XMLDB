@@ -1,0 +1,17 @@
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.csproj.AssemblyReference.cache
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.GeneratedMSBuildEditorConfig.editorconfig
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.AssemblyInfoInputs.cache
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.AssemblyInfo.cs
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.csproj.CoreCompileInputs.cache
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_XMLDB.deps.json
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_XMLDB.dll
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/ref/Scorpion_XMLDB.dll
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_XMLDB.pdb
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_Aes.dll
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_Cryptography.dll
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_Cryptography.pdb
+/home/ferret/GIT/Scorpion-XMLDB/bin/Debug/net6.0/Scorpion_Aes.pdb
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.csproj.CopyComplete
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.dll
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/ref/Scorpion_XMLDB.dll
+/home/ferret/GIT/Scorpion-XMLDB/obj/Debug/net6.0/Scorpion_XMLDB.pdb
