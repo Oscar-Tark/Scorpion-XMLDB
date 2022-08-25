@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Squirrel-Cryptography\Squirrel-Cryptography.csproj" />
-    <ProjectReference Include="..\Squirrel-AES\Scorpion_Aes.csproj" />
+    <ProjectReference Include="..\Squirrel-AES\Squirrel-Aes.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

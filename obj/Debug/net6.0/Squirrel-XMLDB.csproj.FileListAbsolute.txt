@@ -1,0 +1,5 @@
+/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.GeneratedMSBuildEditorConfig.editorconfig
+/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.AssemblyInfoInputs.cache
+/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.AssemblyInfo.cs
+/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.csproj.CoreCompileInputs.cache
+/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.csproj.AssemblyReference.cache
