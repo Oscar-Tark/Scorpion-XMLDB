@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uk2Z7tPZ/Zyn0mvE5uIteqq9xihiY20D6OcdHteefs+uiogYnGIEGryNLu4QyWKJP1kvPf0LmlINWV9GA/rtVg==",
+  "dgSpecHash": "QR8gjIZU2LDAYEHRKqEhdvdivIhWm6hswDJOaz+LuJj/+wvwRhOV5CYOxaJdRfiAB0VVNHixLu6Osa84yFyViA==",
   "success": true,
   "projectFilePath": "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
   "expectedPackageFiles": [
     "/home/ferret/.nuget/packages/capgemini.cauldron.cryptography/3.2.3/capgemini.cauldron.cryptography.3.2.3.nupkg.sha512",
-    "/home/ferret/.nuget/packages/capgemini.cauldron.randomizer/3.2.3/capgemini.cauldron.randomizer.3.2.3.nupkg.sha512"
+    "/home/ferret/.nuget/packages/capgemini.cauldron.randomizer/3.2.3/capgemini.cauldron.randomizer.3.2.3.nupkg.sha512",
+    "/home/ferret/.nuget/packages/easyencrypt/2.2.1/easyencrypt.2.2.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -23,6 +23,28 @@
           "lib/netstandard2.0/Cauldron.Randomizer.dll": {}
         }
       },
+      "EasyEncrypt/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/EasyEncrypt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/EasyEncrypt.dll": {}
+        }
+      },
+      "Squirrel-AES/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EasyEncrypt": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/Squirrel-AES.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Squirrel-AES.dll": {}
+        }
+      },
       "Squirrel-Cryptography/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -95,6 +117,23 @@
         "lib/uap10.0/Cauldron.Randomizer.pri"
       ]
     },
+    "EasyEncrypt/2.2.1": {
+      "sha512": "Dq7ofkt2CoKPnazhDWB7nEsLWdy0i3NsH9bykH85pp+U1k3j9cpqjIcBFgEDF1/qvO3HtTj+E9zMjhq+CPlNKg==",
+      "type": "package",
+      "path": "easyencrypt/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easyencrypt.2.2.1.nupkg.sha512",
+        "easyencrypt.nuspec",
+        "lib/netstandard2.0/EasyEncrypt.dll"
+      ]
+    },
+    "Squirrel-AES/1.0.0": {
+      "type": "project",
+      "path": "../Squirrel-AES/Squirrel-AES.csproj",
+      "msbuildProject": "../Squirrel-AES/Squirrel-AES.csproj"
+    },
     "Squirrel-Cryptography/1.0.0": {
       "type": "project",
       "path": "../Squirrel-Cryptography/Squirrel-Cryptography.csproj",
@@ -103,6 +142,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Squirrel-AES >= 1.0.0",
       "Squirrel-Cryptography >= 1.0.0"
     ]
   },
@@ -131,6 +171,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj": {
+              "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj"
+            },
             "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj": {
               "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj"
             }
