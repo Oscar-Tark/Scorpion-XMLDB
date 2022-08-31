@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj": {}
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/Squirrel-XMLDB.csproj": {}
   },
   "projects": {
-    "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj": {
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj",
+        "projectUniqueName": "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj",
         "projectName": "Squirrel-AES",
-        "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj",
+        "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj",
         "packagesPath": "/home/ferret/.nuget/packages/",
-        "outputPath": "/home/ferret/GIT/Squirrel/Squirrel-AES/obj/",
+        "outputPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ferret/.nuget/NuGet/NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj": {
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/Squirrel-Cryptography.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj",
+        "projectUniqueName": "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/Squirrel-Cryptography.csproj",
         "projectName": "Squirrel-Cryptography",
-        "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj",
+        "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/Squirrel-Cryptography.csproj",
         "packagesPath": "/home/ferret/.nuget/packages/",
-        "outputPath": "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/obj/",
+        "outputPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ferret/.nuget/NuGet/NuGet.Config"
@@ -120,14 +120,14 @@
         }
       }
     },
-    "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj": {
+    "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/Squirrel-XMLDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
+        "projectUniqueName": "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
         "projectName": "Squirrel-XMLDB",
-        "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
+        "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
         "packagesPath": "/home/ferret/.nuget/packages/",
-        "outputPath": "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/",
+        "outputPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ferret/.nuget/NuGet/NuGet.Config"
@@ -142,11 +142,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj": {
-                "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-AES/Squirrel-AES.csproj"
+              "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj": {
+                "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-AES/Squirrel-AES.csproj"
               },
-              "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj": {
-                "projectPath": "/home/ferret/GIT/Squirrel/Squirrel-Cryptography/Squirrel-Cryptography.csproj"
+              "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/Squirrel-Cryptography.csproj": {
+                "projectPath": "/home/ferret/GIT/Squirrel_Project/Squirrel-Cryptography/Squirrel-Cryptography.csproj"
               }
             }
           }

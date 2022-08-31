@@ -1,21 +1,4 @@
-﻿/*  <Scorpion IEE(Intelligent Execution Environment). Server To Run Scorpion Built Applications Using the Scorpion Language>
-    Copyright (C) <2020+>  <Oscar Arjun Singh Tark>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation, either version 3 of the
-    License, or (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Security;
@@ -198,7 +181,7 @@ namespace Scorpion_MDB
                     if (!skip)
                     {
                         if (OPCODE == OPCODE_GET)
-                            returnable.Add(data_handle[current]);
+                            returnable.Add( new ArrayList() { data_handle[current], tag_handle[current], skip == true ? null : subtag_handle[current]} );
                         else if (OPCODE == OPCODE_DELETE)
                         {
                             
@@ -240,7 +223,8 @@ namespace Scorpion_MDB
                         if (OPCODE == OPCODE_GET)
                         {
                             //If index is not -1 or so the tag exists then add the value
-                            returnable.Add(data_handle[current_tag]);
+                            //returnable.Add(data_handle[current_tag]);
+                            returnable.Add( new ArrayList() { data_handle[current], current_tag, null } );
                         }
                         else if (OPCODE == OPCODE_DELETE)
                         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QR8gjIZU2LDAYEHRKqEhdvdivIhWm6hswDJOaz+LuJj/+wvwRhOV5CYOxaJdRfiAB0VVNHixLu6Osa84yFyViA==",
+  "dgSpecHash": "ariW6Qv37uzoMyYNORZSQlrzk/hmaFzXAIitCrmvQVgQcz/JKKUvzeFo/UhuPXSmgskHbBBLIw+LWT6E4Usquw==",
   "success": true,
-  "projectFilePath": "/home/ferret/GIT/Squirrel/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
+  "projectFilePath": "/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/Squirrel-XMLDB.csproj",
   "expectedPackageFiles": [
     "/home/ferret/.nuget/packages/capgemini.cauldron.cryptography/3.2.3/capgemini.cauldron.cryptography.3.2.3.nupkg.sha512",
     "/home/ferret/.nuget/packages/capgemini.cauldron.randomizer/3.2.3/capgemini.cauldron.randomizer.3.2.3.nupkg.sha512",
