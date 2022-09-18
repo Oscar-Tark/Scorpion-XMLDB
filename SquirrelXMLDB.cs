@@ -145,9 +145,10 @@ namespace Scorpion_MDB
 
         public readonly short OPCODE_GET = 0x00;
         public readonly short OPCODE_DELETE = 0x02;
-        public ArrayList doDBSelectiveNoThread(string db, object data, string tag, string subtag, short OPCODE)
+        public XMLDBResult doDBSelectiveNoThread(string db, object data, string tag, string subtag, short OPCODE)
         {
-            ArrayList returnable = new ArrayList();
+            XMLDBResult result = new XMLDBResult(tag, subtag, OPCODE);
+            
             ArrayList subtag_handle = (ArrayList)((ArrayList)mem_db[mem_db_ref.IndexOf(db)])[2];
             ArrayList tag_handle = (ArrayList)((ArrayList)mem_db[mem_db_ref.IndexOf(db)])[1];
             ArrayList data_handle = (ArrayList)((ArrayList)mem_db[mem_db_ref.IndexOf(db)])[0];
@@ -181,10 +182,9 @@ namespace Scorpion_MDB
                     if (!skip)
                     {
                         if (OPCODE == OPCODE_GET)
-                            returnable.Add( new ArrayList() { data_handle[current], tag_handle[current], skip == true ? null : subtag_handle[current]} );
+                            result.Add(data_handle[current], tag_handle[current], subtag_handle[current], skip);
                         else if (OPCODE == OPCODE_DELETE)
                         {
-                            
                             lock(mem_db) lock(mem_db_path) lock(mem_db_ref)
                             {
                                 ((ArrayList)((ArrayList)mem_db[mem_db_ref.IndexOf(db)])[0]).RemoveAt(current);
@@ -199,15 +199,11 @@ namespace Scorpion_MDB
             //Get data by value
             else if (data != null && (string)data != S_NULL)
             {
-                //ArrayList temp_tags = new ArrayList();
                 int current_tag = 0;
 
                 while (current < K_DEFAULT_SLOT_SIZE)
                 {
                     current = data_handle.IndexOf(data, current);
-
-                    //Gets the tag for the current data value and extracts all data related to that tag
-                    //temp_tags.Add(tag_handle[current]);
 
                     //Get all data with the same tag
                     if (current == -1)
@@ -221,11 +217,7 @@ namespace Scorpion_MDB
                             break;
 
                         if (OPCODE == OPCODE_GET)
-                        {
-                            //If index is not -1 or so the tag exists then add the value
-                            //returnable.Add(data_handle[current_tag]);
-                            returnable.Add( new ArrayList() { data_handle[current], current_tag, null } );
-                        }
+                            result.Add(data_handle[current], current_tag, null);
                         else if (OPCODE == OPCODE_DELETE)
                         {
                             
@@ -243,7 +235,91 @@ namespace Scorpion_MDB
                     current++;
                 }
             }
-            return returnable;
+            return result;
+        }
+
+        public struct XMLDBResult
+        {
+            public XMLDBResult(string tag, string subtag, short opcode)
+            {
+                this.tag = tag;
+                this.subtag = subtag;
+                this.opcode = opcode;
+                this.result = new ArrayList();
+            }
+
+            public void Add(object data, object tag, object subtag, bool skip)
+            {
+                this.result.Add(new ArrayList() { data, tag, skip == true ? null : subtag } );
+            }
+
+            public void Add(object data, object tag, object subtag)
+            {
+                this.result.Add(new ArrayList() { data, tag, null } );
+            }
+
+            public string getFirstAsString()
+            {
+                return (string)((ArrayList)result[0])[0]; 
+            }
+
+            public ArrayList getAllDataAsArray()
+            {
+                return result;
+            }
+
+            public int Length()
+            {
+                return result.Count;
+            }
+
+            ArrayList result;
+            string subtag, tag;
+            short opcode;
+        }
+    }
+
+    class XMLDBMemoryCore
+    {
+        private XMLDBMemory xmldbmemory;
+
+        public XMLDBMemoryCore()
+        {
+            xmldbmemory = new XMLDBMemory();
+        }
+
+        private struct XMLDBMemory
+        {
+            public XMLDBMemory()
+            {
+                memory = ArrayList.Synchronized(new ArrayList(0));
+                references = ArrayList.Synchronized(new ArrayList(0));
+                paths = ArrayList.Synchronized(new ArrayList(0));
+            }
+
+            public void Add()
+            {
+
+            }
+
+            public void Get()
+            {
+
+            }
+
+            public void Set()
+            {
+                
+            }
+
+            public void Remove()
+            {
+
+            }
+
+            private ArrayList references;
+            private ArrayList paths;
+            private ArrayList memory;
         }
     }
 }

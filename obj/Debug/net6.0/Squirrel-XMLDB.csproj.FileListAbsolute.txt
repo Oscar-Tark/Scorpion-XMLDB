@@ -17,7 +17,6 @@
 /home/ferret/GIT/Squirrel/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.pdb
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/Squirrel-XMLDB.deps.json
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/Squirrel-XMLDB.dll
-/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/ref/Squirrel-XMLDB.dll
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/Squirrel-XMLDB.pdb
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/Squirrel-AES.dll
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/bin/Debug/net6.0/Squirrel-Cryptography.dll
@@ -32,3 +31,4 @@
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.dll
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/obj/Debug/net6.0/ref/Squirrel-XMLDB.dll
 /home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/obj/Debug/net6.0/Squirrel-XMLDB.pdb
+/home/ferret/GIT/Squirrel_Project/Squirrel-XMLDB/obj/Debug/net6.0/refint/Squirrel-XMLDB.dll
