@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using System.Security;
 
 namespace Scorpion_MDB
@@ -133,6 +131,27 @@ namespace Scorpion_MDB
                 ((ArrayList)al_tmp[0]).Add(data);
                 ((ArrayList)al_tmp[1]).Add(tag);
                 ((ArrayList)al_tmp[2]).Add(subtag);
+            }
+            return true;
+        }
+
+        public bool updateDB(string name, string tag, string subtag, object new_data)
+        {
+            lock(mem_db) lock(mem_db_path) lock(mem_db_ref)
+            {
+                int entry_ndx = mem_db_ref.IndexOf(name);
+                ArrayList al_tmp = (ArrayList)mem_db[mem_db_ref.IndexOf(name)];
+
+                //Find subtag
+                int ndx_subtag = ((ArrayList)al_tmp[2]).IndexOf(subtag);
+
+                //If entry not found cancel
+                if(ndx_subtag == -1)
+                    return false;
+
+                //Replace the data
+                ((ArrayList)al_tmp[0])[ndx_subtag] = new_data;
+                mem_db[mem_db_ref.IndexOf(name)] = al_tmp;
             }
             return true;
         }
